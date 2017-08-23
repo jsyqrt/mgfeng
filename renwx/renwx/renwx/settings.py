@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for quangq project
+# Scrapy settings for renwx project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,17 +9,17 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'quangq'
+BOT_NAME = 'renwx'
 
-SPIDER_MODULES = ['quangq.spiders']
-NEWSPIDER_MODULE = 'quangq.spiders'
+SPIDER_MODULES = ['renwx.spiders']
+NEWSPIDER_MODULE = 'renwx.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'quangq (+http://www.yourdomain.com)'
+#USER_AGENT = 'renwx (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'quangq.middlewares.BaisjSpiderMiddleware': 543,
+#    'renwx.middlewares.RenwxSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'quangq.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'renwx.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'quangq.pipelines.BaisjPipeline': 300,
+#    'renwx.pipelines.RenwxPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
